@@ -7,6 +7,10 @@ h1 {
     font-family: 'Indie Flower', cursive;
 }
 
+a {
+    display: flex;
+    flex-direction: row;
+}
 .container {
     display: grid;
     grid-template-rows: 10rem 1fr 5rem;
@@ -75,6 +79,7 @@ h1 {
 .shop-items {
     display: flex;
     text-align: center;
+    padding: 10px;
 }
 
 .shop-item {
@@ -173,7 +178,7 @@ section.cart {
 
     .shop-item {
         justify-self: center;
-        max-width: 700px;
+    
     }
 
     .cart {

@@ -33,3 +33,9 @@ function defineImg() {
 
 defineImg()
 
+const shop = document.querySelector('.shot-items')
+shop.addEventListener('click', function image() {
+    
+},false)
+
+
