@@ -72,8 +72,12 @@ h1 {
 }
 
 .shop-items {
+    display: flex;
     text-align: center;
-   
+}
+
+.shop-item {
+    justify-content: space-around;
 }
 
 .cart {
@@ -162,7 +166,6 @@ section.cart {
     }
 
     section.shop-items {
-        display: flex;
         text-align: center;
         margin: 10px;
     }
