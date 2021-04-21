@@ -1,4 +1,191 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'RocknRoll One', sans-serif;
+}
+h1 {
+    font-family: 'Indie Flower', cursive;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 10rem 1fr 5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        'h'
+        'm'
+
+        'f';
+
+    gap: none;
+    width: 100vw;
+    height: 100vh;
+}
+.header {
+    grid-area: h;
+    direction: rtl;
+    background-color: #D4F1F4;
+    color:#286983 ;
+    
+}
+
+.content {
+    grid-area: m;
+    background-color: #D4F1F4;
+    color:#286983 ;
+    padding: 10px;
+    
+}
+
+
+.footer {
+    grid-area: f;
+    background-color: #D4F1F4;
+    color:#286983 ;
+    text-align: center;
+    padding: 1rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-size: 18px;
+    list-style-type: none;
+    
+}
+
+.band-name {
+    text-align: center;
+    background-color: #286983;
+    color: aliceblue;
+}
+
+.section-header {
+    font-size: 20px;
+    text-align: center;
+}
+.wrapper {
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.shop-items {
+    text-align: center;
+   
+}
+
+.cart {
+    margin-top: 20px;
+    background-color: azure;
+    color:#286983;
+}
+
+.cart-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+span {
+    padding: 10px;
+}
+
+section.cart {
+    justify-content: left;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: grid;
+        grid-template-rows: 7rem 1fr 2rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'h'
+            'm'
+            'f';
+    
+        gap: none;
+        width: 100vw;
+        height: 100vh;
+    }
+    .header {
+        grid-area: h;
+        direction: rtl;
+        background-color: #D4F1F4;
+        color:#286983 ;
+        
+    }
+    
+    .content {
+        grid-area: m;
+        background-color: #D4F1F4;
+        color:#286983 ;
+        padding: 10px;
+        align-content: center;
+    }
+    
+    .footer {
+        grid-area: f;
+        background-color: #D4F1F4;
+        color:#286983 ;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+        font-size: 12px;
+        list-style-type: none;
+        
+    }
+
+    .band-name {
+        text-align: center;
+        background-color: #286983;
+        color: aliceblue;
+    }
+
+    .section-header {
+        font-size: 16px;
+        text-align: center;
+    }
+    .wrapper {
+        justify-content: center;
+        height: 100vh;
+        
+    }
+
+    section.shop-items {
+        display: flex;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .shop-item {
+        justify-self: center;
+        max-width: 700px;
+    }
+
+    .cart {
+        background-color: azure;
+        color:#286983;
+    }
+
+    .cart-row {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    span {
+        padding: 10px;
+    }
+
 }
